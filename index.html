@@ -1,0 +1,270 @@
+<!DOCTYPE HTML>
+<html lang="es">
+    <HEAD>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard - Gestion de Proyectos</title>
+        <style>
+            /* aquí puedes agregar tus estilos CSS */
+            /* ==========================================================================
+   1. ESTILOS GENERALES Y LAYOUT
+   ========================================================================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Barra lateral de navegación (Sidebar) */
+.sidebar {
+  width: 240px;
+  background-color: #1a252f;
+  color: #fff;
+  padding: 20px;
+  flex-shrink: 0;
+}
+
+.sidebar h2 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #34495e;
+  padding-bottom: 10px;
+  color: #ecf0f1;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin-bottom: 12px;
+}
+
+.sidebar a {
+  color: #bdc3c7;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.sidebar a:hover {
+  background-color: #34495e;
+  color: #fff;
+}
+
+/* Área principal de contenido */
+.main-content {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+header {
+  margin-bottom: 25px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+header h1 {
+  color: #2c3e50;
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+
+header p {
+  color: #7f8c8d;
+}
+
+/* Tarjetas y Contenedores */
+.section-card {
+  background-color: #fff;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.section-card h2 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+  border-left: 4px solid #3498db;
+  padding-left: 10px;
+}
+
+/* Grid para las Herramientas y Técnicas */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.grid-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 15px;
+  background-color: #fafafa;
+}
+
+.grid-card h3 {
+  color: #2980b9;
+  margin-bottom: 8px;
+}
+
+.grid-card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* Estilos para Glosario / Definiciones */
+.glossary-item {
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #ddd;
+}
+
+.glossary-item:last-child {
+  border-bottom: none;
+}
+
+.glossary-term {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+/* Etiquetas/Badges para categorías */
+.tag {
+  display: inline-block;
+  background-color: #e8f4f8;
+  color: #2980b9;
+  font-size: 0.8rem;
+  padding: 3px 8px;
+  border-radius: 4px;
+  margin-top: 8px;
+}
+
+
+        </style>
+    </HEAD>
+    <body>
+<!-- Barra de navegación lateral -->
+    <nav class="sidebar">
+
+        <h2>Dashboard</h2>
+            <li><a href="#definiciones">1. definiciones</a></li>
+            <li><a href="#herramientas">2. herramientas</a></li>
+            <li><a href="#tecnicas">3. técnicas</a></li>
+            <li><a href="#proyecto/talleres">4. proyecto/talleres</a></li>
+        </ul>
+    </nav>
+    <main class="main-content">
+        <header>
+            <h1>Dashboard del estudiante: Juan David Caicedo G</h1>
+            <p>espacio de consulta de conceptos, herramientas y técnicas</p>
+        </header>
+
+        <!-- Seccion 1: Definiciones -->
+        
+        <section id="definiciones" class="section-card">
+            <h2>1. Definiciones Fundamentales</h2>
+
+            <!-- Estructura para agregar definiciones   -->
+            <div class="glosary-item">
+            <p class="glosary-term"></p>
+            <p>Que es un proyecto</p>
+
+             <div class="glosary-item">
+            <p class="glosary-term"></p>
+            <p>caracteristicas de los proyectos</p>
+
+             <div class="glosary-item">
+            <p class="glosary-term"></p>
+            <p>Proyectos vs operaciones</p>
+            
+            <div class="glosary-item">
+            <p class="glosary-term"></p>
+            <p>Habilidades del gerente de proyectos</p>
+
+             <div class="glosary-item">
+            <p class="glosary-term"></p>
+            <p>Plan de proyecto</p>
+
+             <div class="glosary-item">
+            <p class="glosary-term"></p>
+            <p>Que necesito para liderar proyectos</p>
+
+             <div class="glosary-item">
+            <p class="glosary-term"></p>
+            <p>Interesados</p>
+        
+        </div>
+        </section>
+
+        <!-- Seccion 2: Herramientas -->
+        <section id="herramientas" class="section-card">
+           <h2>2. Herramientas de Gestion</h2>
+            <div class="grid-container">
+                <a href="matrizpoderinteres.html" class="grid-card grid-card-link"></ahref>
+                  <div  class="grid-card">
+                    <h3>Matriz de poder e interes</h3>
+                    <p>Herramineta para la gestion de involucrados</p>
+                    <span class="tag">Gestión de involucrados</span> 
+                </div>
+                </a>  
+                <div class="grid-card">
+                    <h3>Nombre de la Herramienta </h3>
+                    <p>Descripción</p>
+                    <span class="tag">Area de conocimiento</span> 
+                </div>
+                <div class="grid-card">
+                    <h3>Nombre de la Herramienta </h3>
+                    <p>Descripción</p>
+                    <span class="tag">Area de conocimiento</span> 
+                </div>
+            </div>
+        </section>
+        
+        <!-- Seccion 3: Tecnicas -->
+        <section id="tecnicas" class="section-card">
+            <h2>3. Técnicas y Marcos de Trabajo </h2>
+            <div class="grid-container">
+                <div class="grid-card">
+                    <h3>Nombre de la Tecnica </h3>
+                    <p>Descripción de la metodologia</p>
+                    <span class="tag">enfoque</span> 
+                </div>  
+            </div>
+            </section>
+            
+        <!-- Seccion 4: Proyecto Curso -->
+        <section id="proyecto" class="section-card">
+            <h2>4. Proyecto desarrollado en clase </h2>
+            <p>Espacio para cargar evidencias de las actividades</p>
+
+            <!--Estructura para agregar Tecnicas-->
+
+            <div class="grid-item">
+                  
+                    <p class="glosary-term">Numero de la clase </p>
+                    <p>Notas o enlaces a archivos o documentos </p> 
+            </div>
+
+        </section>
+        
+    </main>
+
+    </body>
